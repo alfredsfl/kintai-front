@@ -1,0 +1,24 @@
+/*  */
+.label-form {
+    font-size: calc(var(--font-size) * 1.0);
+    color: var(--label-color);
+  }
+  .content-error-message {
+    color: var(--error-text-color);
+    font-size: calc(var(--font-size) * 0.75);
+    line-height: 1.0rem;
+  }
+  /* @apply text-sm rounded-lg p-1.5 border-2 !important */
+  .input-normal {
+    border-width: 2px;
+  }
+  
+  input[type=checkbox], input[type=radio] {
+    accent-color: var(--normal-blue);
+    scale: 1.5;
+    margin-left: 0.25rem;
+    &:disabled {
+      opacity: .5;
+    }
+  }
+  

@@ -1,0 +1,88 @@
+
+/* icon */
+
+/* wijmo */ 
+.input-normal {
+    &.wj-state-focused {
+      border-color: #0085c7;
+    }
+    &.required-style {
+      background-color: var(--bg-required);
+    }
+    &.wj-state-readonly {
+      background-color: var(--bg-read-only);
+    }
+    &.error-style {
+      border-color: rgb(239 68 68 / .4);
+      background-color: var(--bg-error);
+      &&.wj-state-focused {
+        border-color: rgb(239 68 68 / 1);
+      }
+    }
+  }
+  .wj-glyph-calendar,
+  .wj-glyph-clock {
+    color: #0085f7 !important;
+    font-size: large !important;
+  }
+  .wj-cells .wj-cell.wj-state-selected {
+    background: #80adbf !important;
+    color: #fff !important;
+  }
+  .wj-cells .wj-cell.wj-state-multi-selected {
+    background: #80adbf !important;
+    color: #fff !important;
+  }
+  .wj-inputnumber input.wj-form-control {
+    text-align: left !important;
+  }
+  .wj-labeled-input input[type=checkbox]+label, .wj-labeled-input input[type=radio]+label {
+    color: var(--normal);
+    cursor: pointer;
+  }
+  .wj-labeled-input input[type=checkbox]:disabled+label, .wj-labeled-input input[type=radio]:disabled+label {
+    opacity: .5;
+  }
+  input[type=checkbox], input[type=radio] {
+    accent-color: var(--normal);
+    &:disabled {
+      opacity: .5;
+    }
+  }
+  /* treeView */
+  .wj-treeview .wj-node{
+    display: flex;
+    align-items: center;
+    height: calc(var(--font-size) * 3.0) !important;
+  }
+  /* accordion tree styles */
+  /* hide collapse/expand glyphs */
+  .accordion.wj-treeview .wj-nodelist .wj-node:before {
+      display: none;
+  }
+  /* level 0 nodes (headers) */
+  .accordion.wj-treeview .wj-nodelist>.wj-node {
+      font-size: calc(var(--font-size) * 1.2);
+      font-weight: bold;
+      height: calc(var(--font-size) * 3.0) !important;
+      padding: 6px 10px;
+      color: white;
+      background: #106cc8;
+      margin-bottom: 4px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  /* level 1 nodes (navigation items) */
+  .accordion.wj-treeview .wj-nodelist>.wj-nodelist>.wj-node {
+      font-size: calc(var(--font-size) * 1.2);
+      height: calc(var(--font-size) * 3.0) !important;
+      font-weight: normal;
+      padding: 0.25rem 1em;
+      color: inherit;
+      background: inherit;
+      box-shadow: none;
+  }
+  
+  .accordion.wj-treeview .wj-nodelist {
+      padding-bottom: 6px;
+  }
+  
