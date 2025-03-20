@@ -1,0 +1,1 @@
+export const processingUrl = new URL(`~/assets/images/processing.png`, import.meta.url).href
